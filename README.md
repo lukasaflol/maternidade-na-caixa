@@ -1,11 +1,11 @@
 # Maternidade na Caixa
 
-Projeto do site oficial.
+Projeto Next.js com TypeScript pronto para deploy no Vercel.
 
-## Scripts
+## Rodar localmente
+npm install
+npm run dev
 
-- `npm run dev` → Rodar localmente
-- `npm run build` → Gerar build de produção
-- `npm start` → Rodar em produção
-
-Deploy recomendado: **Vercel**
+## Build de produção
+npm run build
+npm start

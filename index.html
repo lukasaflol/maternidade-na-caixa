@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maternidade na Caixa — Assessoria à maternidade em Fortaleza</title>
+<meta name="description" content="Assessoria à maternidade: decoração, identidade visual, personalizados, fornecedores e montagem do quarto de maternidade em Fortaleza.">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Jost:wght@200;300;400;500&display=swap">
+<style>
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: #FAF7F4; color: #2E2926; font-family: Jost, sans-serif; -webkit-font-smoothing: antialiased; }
+  * { box-sizing: border-box; }
+  a { color: #A96C60; text-decoration: none; }
+  a:hover { color: #8E5750; }
+  summary::-webkit-details-marker { display: none; }
+  ::selection { background: #EADCD2; }
+  [data-reveal] { opacity: 0; transform: translateY(26px); transition: opacity .9s cubic-bezier(.22,.61,.36,1), transform .9s cubic-bezier(.22,.61,.36,1); }
+  [data-reveal].is-in { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: reduce) { [data-reveal] { opacity: 1; transform: none; transition: none; } }
+  @keyframes mncUp { from { opacity: 0; transform: translateY(28px); } to { opacity: 1; transform: none; } }
+  @keyframes mncFade { from { opacity: 0; } to { opacity: 1; } }
+  @keyframes mncGrow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+  @keyframes mncZoom { from { transform: scale(1.08); } to { transform: scale(1); } }
+  @keyframes mncMarquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  #mnc-ticker:hover [data-track] { animation-play-state: paused; }
+  @media (prefers-reduced-motion: reduce) { #mnc-ticker [data-track] { animation: none; } }
+  @media (min-width: 900px) { [data-desktop-nav] { display: flex !important; } }
+</style>
+</helmet>
+
+<div>
+<template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="#A96C60"/><text x="50" y="59" text-anchor="middle" font-family="Georgia,serif" font-size="30" fill="#FDFBF9">MC</text></svg></template>
+
+<header style="position:sticky;top:0;z-index:60;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:16px clamp(20px,5vw,64px);background:rgba(250,247,244,.93);backdrop-filter:blur(12px);border-bottom:1px solid rgba(46,41,38,.1);animation:mncFade .8s .1s both">
+  <a href="#top" style="font:400 16px/1 Marcellus,serif;letter-spacing:.14em;text-transform:uppercase;color:#2E2926">Maternidade na Caixa</a>
+  <nav style="display:none;flex-wrap:wrap;gap:14px 26px;align-items:center;justify-content:center" data-desktop-nav>
+    <a href="#sobre" style="font:300 11px/1 Jost,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#5F564F">Sobre</a>
+    <a href="#como-funciona" style="font:300 11px/1 Jost,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#5F564F">Como funciona</a>
+    <a href="#experiencias" style="font:300 11px/1 Jost,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#5F564F">Experiências</a>
+    <a href="#portfolio" style="font:300 11px/1 Jost,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#5F564F">Histórias</a>
+    <a href="#faq" style="font:300 11px/1 Jost,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#5F564F">Dúvidas</a>
+  </nav>
+  <a href="{{ whatsHero }}" target="_blank" rel="noopener" style="flex:none;background:#A96C60;color:#FDFBF9;padding:13px 22px;font:400 11px/1 Jost,sans-serif;letter-spacing:.16em;text-transform:uppercase;transition:background .3s" style-hover="background:#8E5750;color:#FDFBF9">Quero planejar</a>
+</header>
+
+<section id="top" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));min-height:min(86vh,840px)">
+  <div style="display:flex;flex-direction:column;justify-content:center;gap:30px;padding:clamp(48px,7vw,104px) clamp(24px,5vw,80px)">
+    <p style="margin:0;font:300 11px/1 Jost,sans-serif;letter-spacing:.28em;text-transform:uppercase;color:#A96C60;animation:mncUp .9s .15s both">Assessoria à maternidade</p>
+    <h1 style="margin:0;font:400 clamp(38px,5.4vw,70px)/1.08 Marcellus,serif;letter-spacing:-.015em;color:#2E2926;text-wrap:pretty;animation:mncUp 1s .28s both">Você vive a chegada.<br>Nós cuidamos de tudo ao redor.</h1>
+    <p style="margin:0;max-width:52ch;font:300 clamp(16px,1.5vw,19px)/1.75 Jost,sans-serif;color:#5F564F;text-wrap:pretty;animation:mncUp 1s .44s both">Assessoria à maternidade para famílias que querem receber esse momento com beleza, organização e tranquilidade — sem precisar coordenar fornecedores, produção e montagem.</p>
+    <div style="display:flex;flex-wrap:wrap;align-items:center;gap:14px 28px;animation:mncUp 1s .58s both">
+      <a href="{{ whatsHero }}" target="_blank" rel="noopener" style="background:#A96C60;color:#FDFBF9;padding:18px 32px;font:400 12px/1 Jost,sans-serif;letter-spacing:.16em;text-transform:uppercase;transition:background .3s" style-hover="background:#8E5750;color:#FDFBF9">Quero planejar minha maternidade</a>
+      <a href="#como-funciona" style="color:#2E2926;border-bottom:1px solid rgba(46,41,38,.28);padding-bottom:5px;font:300 12px/1 Jost,sans-serif;letter-spacing:.16em;text-transform:uppercase" style-hover="color:#A96C60;border-bottom:1px solid #A96C60">Conheça como funciona</a>
+    </div>
+    <div style="display:flex;align-items:center;gap:14px;animation:mncFade 1.2s .9s both">
+      <span style="width:44px;height:1px;background:#C9A79B;transform-origin:left;animation:mncGrow 1s .95s both"></span>
+      <p style="margin:0;font:300 13px/1.5 Jost,sans-serif;letter-spacing:.06em;color:#8A7F77">Da ideia à montagem no dia do nascimento.</p>
+    </div>
+  </div>
+  <div style="position:relative;min-height:min(68vh,700px);overflow:hidden;animation:mncFade 1.4s .2s both">
+    <div style="position:absolute;inset:0;animation:mncZoom 2.4s cubic-bezier(.22,.61,.36,1) both">
+      <img src="fotos/hero.jpg" alt="" style="width:100%;height:100%;object-fit:cover;display:block">
+    </div>
+  </div>
+</section>
+
+<section id="mnc-ticker" style="padding:clamp(22px,2.6vw,32px) 0;border-top:1px solid rgba(46,41,38,.1);border-bottom:1px solid rgba(46,41,38,.1);background:#FDFBF9;overflow:hidden">
+  <div data-track style="display:flex;width:max-content;animation:mncMarquee 34s linear infinite">
+    <div style="display:flex;align-items:center;gap:clamp(28px,4vw,56px);padding-right:clamp(28px,4vw,56px)">
+      <span style="font:400 clamp(19px,2vw,26px)/1.2 Marcellus,serif;color:#2E2926;white-space:nowrap">Mais de 220 famílias atendidas</span>
+      <span style="width:5px;height:5px;background:#C9A79B;flex:none"></span>
+      <span style="font:400 clamp(19px,2vw,26px)/1.2 Marcellus,serif;color:#2E2926;white-space:nowrap">Desde 2023</span>
+      <span style="width:5px;height:5px;background:#C9A79B;flex:none"></span>
+      <span style="font:400 clamp(19px,2vw,26px)/1.2 Marcellus,serif;color:#2E2926;white-space:nowrap">Principais maternidades de Fortaleza</span>
+      <span style="width:5px;height:5px;background:#C9A79B;flex:none"></span>
+      <span style="font:400 clamp(19px,2vw,26px)/1.2 Marcellus,serif;color:#A96C60;white-space:nowrap">Da identidade visual à montagem</span>
+      <span style="width:5px;height:5px;background:#C9A79B;flex:none"></span>
+    </div>
+    <div aria-hidden="true" style="display:flex;align-items:center;gap:clamp(28px,4vw,56px);padding-right:clamp(28px,4vw,56px)">
+      <span style="font:400 clamp(19px,2vw,26px)/1.2 Marcellus,serif;color:#2E2926;white-space:nowrap">Mais de 220 famílias atendidas</span>
+      <span style="width:5px;height:5px;background:#C9A79B;flex:none"></span>
+      <span style="font:400 clamp(19px,2vw,26px)/1.2 Marcellus,serif;color:#2E2926;white-space:nowrap">Desde 2023</span>
+      <span style="width:5px;height:5px;background:#C9A79B;flex:none"></span>
+      <span style="font:400 clamp(19px,2vw,26px)/1.2 Marcellus,serif;color:#2E2926;white-space:nowrap">Principais maternidades de Fortaleza</span>
+      <span style="width:5px;height:5px;background:#C9A79B;flex:none"></span>
+      <span style="font:400 clamp(19px,2vw,26px)/1.2 Marcellus,serif;color:#A96C60;white-space:nowrap">Da identidade visual à montagem</span>
+      <span style="width:5px;height:5px;background:#C9A79B;flex:none"></span>
+    </div>
+  </div>
+</section>
+
+<section id="sobre" style="padding:clamp(72px,10vw,148px) clamp(24px,5vw,80px);border-top:1px solid rgba(46,41,38,.1)">
+  <div style="max-width:1280px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:clamp(32px,5vw,88px);align-items:start">
+    <div data-reveal>
+      <p style="margin:0 0 22px;font:300 11px/1 Jost,sans-serif;letter-spacing:.28em;text-transform:uppercase;color:#A96C60">Sobre</p>
+      <h2 style="margin:0;font:400 clamp(30px,4vw,52px)/1.14 Marcellus,serif;color:#2E2926;text-wrap:pretty">Mais do que decoração.<br>Cuidado com toda a experiência.</h2>
+    </div>
+    <div data-reveal style="display:flex;flex-direction:column;gap:22px;max-width:56ch">
+      <p style="margin:0;font:300 clamp(16px,1.4vw,18px)/1.8 Jost,sans-serif;color:#5F564F">A chegada de um bebê já envolve decisões demais. A Maternidade na Caixa entra para assumir uma parte delas.</p>
+      <p style="margin:0;font:300 clamp(16px,1.4vw,18px)/1.8 Jost,sans-serif;color:#5F564F">A família conta como imagina o momento. Entendemos hospital, espaço, visitas, preferências e o que já se tem em casa. Depois, recomendamos e organizamos tudo que fizer sentido.</p>
+      <p style="margin:0;font:300 clamp(16px,1.4vw,18px)/1.8 Jost,sans-serif;color:#5F564F">Se a família já tem itens próprios — os doces feitos pela mãe, uma toalha de mesa, peças com história — incorporamos na composição sem custo adicional.</p>
+      <blockquote style="margin:14px 0 0;padding-left:26px;border-left:1px solid #C9A79B;font:400 clamp(19px,2vw,25px)/1.5 Marcellus,serif;color:#2E2926">A cliente não precisa saber montar uma maternidade. Esse é o nosso trabalho.</blockquote>
+    </div>
+  </div>
+</section>
+
+<section id="como-funciona" style="padding:clamp(72px,10vw,148px) clamp(24px,5vw,80px);background:#F2ECE5">
+  <div style="max-width:1280px;margin:0 auto">
+    <div data-reveal style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:24px;margin-bottom:clamp(40px,6vw,80px)">
+      <div>
+        <p style="margin:0 0 20px;font:300 11px/1 Jost,sans-serif;letter-spacing:.28em;text-transform:uppercase;color:#A96C60">Como funciona</p>
+        <h2 style="margin:0;font:400 clamp(30px,4vw,52px)/1.14 Marcellus,serif;color:#2E2926">Quatro passos tranquilos.</h2>
+      </div>
+      <p style="margin:0;max-width:38ch;font:300 15px/1.7 Jost,sans-serif;color:#6B625B">Do primeiro contato ao quarto pronto, você só precisa contar como imagina o momento.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1px;background:rgba(46,41,38,.12)">
+      <div data-reveal style="background:#F2ECE5;padding:clamp(26px,3vw,40px) clamp(20px,2.4vw,34px);display:flex;flex-direction:column;gap:16px">
+        <span style="font:400 13px/1 Jost,sans-serif;letter-spacing:.2em;color:#A96C60">01</span>
+        <h3 style="margin:0;font:400 clamp(20px,2vw,26px)/1.3 Marcellus,serif;color:#2E2926">A gente conhece sua história</h3>
+        <p style="margin:0;font:300 15px/1.7 Jost,sans-serif;color:#6B625B">Bebê, maternidade escolhida, data prevista, quarto, estilo e necessidades.</p>
+      </div>
+      <div data-reveal style="background:#F2ECE5;padding:clamp(26px,3vw,40px) clamp(20px,2.4vw,34px);display:flex;flex-direction:column;gap:16px">
+        <span style="font:400 13px/1 Jost,sans-serif;letter-spacing:.2em;color:#A96C60">02</span>
+        <h3 style="margin:0;font:400 clamp(20px,2vw,26px)/1.3 Marcellus,serif;color:#2E2926">Criamos a proposta</h3>
+        <p style="margin:0;font:300 15px/1.7 Jost,sans-serif;color:#6B625B">Recomendamos a melhor composição para a realidade da sua família.</p>
+      </div>
+      <div data-reveal style="background:#F2ECE5;padding:clamp(26px,3vw,40px) clamp(20px,2.4vw,34px);display:flex;flex-direction:column;gap:16px">
+        <span style="font:400 13px/1 Jost,sans-serif;letter-spacing:.2em;color:#A96C60">03</span>
+        <h3 style="margin:0;font:400 clamp(20px,2vw,26px)/1.3 Marcellus,serif;color:#2E2926">Organizamos os detalhes</h3>
+        <p style="margin:0;font:300 15px/1.7 Jost,sans-serif;color:#6B625B">Identidade visual, personalizados, doces, flores e logística — com condições negociadas junto aos nossos fornecedores parceiros.</p>
+      </div>
+      <div data-reveal style="background:#F2ECE5;padding:clamp(26px,3vw,40px) clamp(20px,2.4vw,34px);display:flex;flex-direction:column;gap:16px">
+        <span style="font:400 13px/1 Jost,sans-serif;letter-spacing:.2em;color:#A96C60">04</span>
+        <h3 style="margin:0;font:400 clamp(20px,2vw,26px)/1.3 Marcellus,serif;color:#2E2926">Deixamos tudo pronto</h3>
+        <p style="margin:0;font:300 15px/1.7 Jost,sans-serif;color:#6B625B">A equipe faz a montagem no momento certo e depois cuida da desmontagem.</p>
+      </div>
+    </div>
+    <div style="margin-top:clamp(32px,4vw,56px);display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px">
+      <div data-reveal style="position:relative;aspect-ratio:4/5"><img src="fotos/func-1.jpg" alt="" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+      <div data-reveal style="position:relative;aspect-ratio:4/5"><img src="fotos/func-2.jpg" alt="" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+      <div data-reveal style="position:relative;aspect-ratio:4/5"><img src="fotos/func-3.jpg" alt="" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+      <div data-reveal style="position:relative;aspect-ratio:4/5"><img src="fotos/func-4.jpg" alt="" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+    </div>
+  </div>
+</section>
+
+<section id="experiencias" style="padding:clamp(72px,10vw,148px) clamp(24px,5vw,80px)">
+  <div style="max-width:1280px;margin:0 auto">
+    <div data-reveal style="max-width:60ch;margin-bottom:clamp(40px,6vw,76px)">
+      <p style="margin:0 0 20px;font:300 11px/1 Jost,sans-serif;letter-spacing:.28em;text-transform:uppercase;color:#A96C60">Experiências</p>
+      <h2 style="margin:0 0 22px;font:400 clamp(30px,4vw,52px)/1.14 Marcellus,serif;color:#2E2926;text-wrap:pretty">Cada família vive a maternidade de um jeito.</h2>
+      <p style="margin:0;font:300 clamp(16px,1.4vw,18px)/1.8 Jost,sans-serif;color:#5F564F">Nossos pacotes são o ponto de partida — a proposta final é sempre personalizada.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:clamp(24px,3vw,48px)">
+      <article data-reveal style="border:1px solid rgba(46,41,38,.12);background:#FDFBF9;display:flex;flex-direction:column;transition:transform .5s cubic-bezier(.22,.61,.36,1),box-shadow .5s" style-hover="transform:translateY(-6px);box-shadow:0 24px 60px -30px rgba(46,41,38,.4)">
+        <div style="position:relative;aspect-ratio:3/2"><img src="fotos/pack-1.jpg" alt="" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+        <div style="padding:clamp(26px,3vw,40px);display:flex;flex-direction:column;gap:18px;flex:1">
+          <p style="margin:0;font:300 11px/1 Jost,sans-serif;letter-spacing:.28em;text-transform:uppercase;color:#8A9A83">Ponto de partida</p>
+          <h3 style="margin:0;font:400 clamp(26px,2.6vw,34px)/1.2 Marcellus,serif;color:#2E2926">Tu Vens</h3>
+          <p style="margin:0;font:300 16px/1.75 Jost,sans-serif;color:#5F564F">Uma composição delicada para uma recepção menor e acolhedora.</p>
+          <p style="margin:6px 0 0;font:300 12px/1 Jost,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8A7F77">Pode fazer parte</p>
+          <ul style="margin:0;padding:0;list-style:none;display:grid;gap:9px">
+            <li style="font:300 15px/1.5 Jost,sans-serif;color:#5F564F;border-bottom:1px solid rgba(46,41,38,.08);padding-bottom:9px">Lembrancinhas</li>
+            <li style="font:300 15px/1.5 Jost,sans-serif;color:#5F564F;border-bottom:1px solid rgba(46,41,38,.08);padding-bottom:9px">Águas personalizadas</li>
+            <li style="font:300 15px/1.5 Jost,sans-serif;color:#5F564F;border-bottom:1px solid rgba(46,41,38,.08);padding-bottom:9px">Chocolates e doces</li>
+            <li style="font:300 15px/1.5 Jost,sans-serif;color:#5F564F;border-bottom:1px solid rgba(46,41,38,.08);padding-bottom:9px">Flores</li>
+            <li style="font:300 15px/1.5 Jost,sans-serif;color:#5F564F;border-bottom:1px solid rgba(46,41,38,.08);padding-bottom:9px">Bomboniere ou bolo</li>
+            <li style="font:300 15px/1.5 Jost,sans-serif;color:#5F564F;border-bottom:1px solid rgba(46,41,38,.08);padding-bottom:9px">Itens de higiene para as visitas</li>
+            <li style="font:300 15px/1.5 Jost,sans-serif;color:#5F564F;border-bottom:1px solid rgba(46,41,38,.08);padding-bottom:9px">Peças de apoio do acervo</li>
+            <li style="font:300 15px/1.5 Jost,sans-serif;color:#5F564F">Identidade visual</li>
+          </ul>
+        </div>
+      </article>
+      <article data-reveal style="border:1px solid rgba(169,108,96,.4);background:#FDFBF9;display:flex;flex-direction:column;transition:transform .5s cubic-bezier(.22,.61,.36,1),box-shadow .5s" style-hover="transform:translateY(-6px);box-shadow:0 24px 60px -30px rgba(46,41,38,.4)">
+        <div style="position:relative;aspect-ratio:3/2"><img src="fotos/pack-2.jpg" alt="" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+        <div style="padding:clamp(26px,3vw,40px);display:flex;flex-direction:column;gap:18px;flex:1">
+          <p style="margin:0;font:300 11px/1 Jost,sans-serif;letter-spacing:.28em;text-transform:uppercase;color:#A96C60">Experiência completa</p>
+          <h3 style="margin:0;font:400 clamp(26px,2.6vw,34px)/1.2 Marcellus,serif;color:#2E2926">Celebre a Vida</h3>
+          <p style="margin:0;font:300 16px/1.75 Jost,sans-serif;color:#5F564F">Para famílias que desejam uma recepção maior e mais elaborada.</p>
+          <p style="margin:6px 0 0;font:300 12px/1 Jost,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8A7F77">Pode incluir</p>
+          <ul style="margin:0;padding:0;list-style:none;display:grid;gap:9px">
+            <li style="font:300 15px/1.5 Jost,sans-serif;color:#5F564F;border-bottom:1px solid rgba(46,41,38,.08);padding-bottom:9px">Maior quantidade de personalizados</li>
+            <li style="font:300 15px/1.5 Jost,sans-serif;color:#5F564F;border-bottom:1px solid rgba(46,41,38,.08);padding-bottom:9px">Lembrancinhas</li>
+            <li style="font:300 15px/1.5 Jost,sans-serif;color:#5F564F;border-bottom:1px solid rgba(46,41,38,.08);padding-bottom:9px">Doces e chocolates</li>
+            <li style="font:300 15px/1.5 Jost,sans-serif;color:#5F564F;border-bottom:1px solid rgba(46,41,38,.08);padding-bottom:9px">Bem-nascidos, brownies ou similares</li>
+            <li style="font:300 15px/1.5 Jost,sans-serif;color:#5F564F;border-bottom:1px solid rgba(46,41,38,.08);padding-bottom:9px">Flores</li>
+            <li style="font:300 15px/1.5 Jost,sans-serif;color:#5F564F;border-bottom:1px solid rgba(46,41,38,.08);padding-bottom:9px">Itens decorativos</li>
+            <li style="font:300 15px/1.5 Jost,sans-serif;color:#5F564F;border-bottom:1px solid rgba(46,41,38,.08);padding-bottom:9px">Identidade visual</li>
+            <li style="font:300 15px/1.5 Jost,sans-serif;color:#5F564F;border-bottom:1px solid rgba(46,41,38,.08);padding-bottom:9px">Organização dos fornecedores</li>
+            <li style="font:300 15px/1.5 Jost,sans-serif;color:#5F564F">Montagem</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+    <div data-reveal style="margin-top:clamp(32px,4vw,56px);display:flex;flex-wrap:wrap;align-items:center;gap:16px 30px">
+      <a href="{{ whatsPacotes }}" target="_blank" rel="noopener" style="background:#A96C60;color:#FDFBF9;padding:18px 32px;font:400 12px/1 Jost,sans-serif;letter-spacing:.16em;text-transform:uppercase;transition:background .3s" style-hover="background:#8E5750;color:#FDFBF9">Quero saber qual faz sentido para mim</a>
+      <p style="margin:0;font:300 15px/1.6 Jost,sans-serif;color:#8A7F77">A gente te ajuda a escolher.</p>
+    </div>
+  </div>
+</section>
+
+<section id="montagem" style="padding:clamp(72px,10vw,148px) clamp(24px,5vw,80px);background:#EFE6DC">
+  <div style="max-width:1280px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:clamp(32px,5vw,80px);align-items:center">
+    <div data-reveal style="display:flex;flex-direction:column;gap:22px;max-width:52ch">
+      <p style="margin:0;font:300 11px/1 Jost,sans-serif;letter-spacing:.28em;text-transform:uppercase;color:#A96C60">Já comprei tudo</p>
+      <h2 style="margin:0;font:400 clamp(28px,3.6vw,46px)/1.16 Marcellus,serif;color:#2E2926;text-wrap:pretty">Já resolveu os itens?<br>A gente cuida da montagem.</h2>
+      <p style="margin:0;font:300 clamp(16px,1.4vw,18px)/1.8 Jost,sans-serif;color:#5F564F">Você pode contratar apenas a assessoria de montagem. Organizamos a composição, usamos o acervo contratado quando aplicável, cuidamos dos arranjos e deixamos o quarto pronto para receber.</p>
+      <div>
+        <a href="{{ whatsMontagem }}" target="_blank" rel="noopener" style="display:inline-block;background:#2E2926;color:#FDFBF9;padding:18px 32px;font:400 12px/1 Jost,sans-serif;letter-spacing:.16em;text-transform:uppercase;transition:background .3s" style-hover="background:#A96C60;color:#FDFBF9">Quero ajuda com a montagem</a>
+      </div>
+    </div>
+    <div data-reveal style="position:relative;aspect-ratio:4/3"><img src="fotos/montagem.jpg" alt="" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+  </div>
+</section>
+
+<section id="personalizacao" style="padding:clamp(72px,10vw,148px) clamp(24px,5vw,80px)">
+  <div style="max-width:1280px;margin:0 auto">
+    <div data-reveal style="max-width:56ch;margin-bottom:clamp(36px,5vw,68px)">
+      <p style="margin:0 0 20px;font:300 11px/1 Jost,sans-serif;letter-spacing:.28em;text-transform:uppercase;color:#A96C60">Personalização</p>
+      <h2 style="margin:0 0 22px;font:400 clamp(30px,4vw,52px)/1.14 Marcellus,serif;color:#2E2926;text-wrap:pretty">Cada chegada merece ter a cara da família.</h2>
+      <p style="margin:0;font:300 clamp(16px,1.4vw,18px)/1.8 Jost,sans-serif;color:#5F564F">Se a família ainda não tem uma identidade visual, criamos a dela — paleta, papelaria e detalhes — e aplicamos em tudo, das águas às velas, dos adesivos às embalagens.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px">
+      <div data-reveal style="position:relative;aspect-ratio:3/4"><img src="fotos/pers-1.jpg" alt="" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+      <div data-reveal style="position:relative;aspect-ratio:3/4"><img src="fotos/pers-2.jpg" alt="" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+      <div data-reveal style="position:relative;aspect-ratio:3/4"><img src="fotos/pers-3.jpg" alt="" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+      <div data-reveal style="position:relative;aspect-ratio:3/4"><img src="fotos/pers-4.jpg" alt="" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+    </div>
+  </div>
+</section>
+
+<section id="portfolio" style="padding:clamp(72px,10vw,148px) clamp(24px,5vw,80px);background:#F2ECE5">
+  <div style="max-width:1280px;margin:0 auto">
+    <div data-reveal style="max-width:52ch;margin-bottom:clamp(36px,5vw,68px)">
+      <p style="margin:0 0 20px;font:300 11px/1 Jost,sans-serif;letter-spacing:.28em;text-transform:uppercase;color:#A96C60">Histórias</p>
+      <h2 style="margin:0;font:400 clamp(28px,3.6vw,48px)/1.16 Marcellus,serif;color:#2E2926;text-wrap:pretty">Algumas chegadas que tivemos o privilégio de preparar</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(20px,2.4vw,36px)">
+      <figure data-reveal style="margin:0;display:flex;flex-direction:column;gap:16px">
+        <div style="position:relative;aspect-ratio:4/5;overflow:hidden"><img src="fotos/port-1.jpg" alt="" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+        <figcaption style="display:flex;flex-direction:column;gap:6px">
+          <span style="font:400 20px/1.3 Marcellus,serif;color:#2E2926">Baby Aurora</span>
+          <span style="font:300 13px/1.5 Jost,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#8A7F77">Oto Meireles - Quarto VIP</span>
+        </figcaption>
+      </figure>
+      <figure data-reveal style="margin:0;display:flex;flex-direction:column;gap:16px">
+        <div style="position:relative;aspect-ratio:4/5;overflow:hidden"><img src="fotos/port-2.jpg" alt="" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+        <figcaption style="display:flex;flex-direction:column;gap:6px">
+          <span style="font:400 20px/1.3 Marcellus,serif;color:#2E2926">Baby Caio</span>
+          <span style="font:300 13px/1.5 Jost,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#8A7F77">Oto Meireles - Quarto VIP</span>
+        </figcaption>
+      </figure>
+      <figure data-reveal style="margin:0;display:flex;flex-direction:column;gap:16px">
+        <div style="position:relative;aspect-ratio:4/5;overflow:hidden"><img src="fotos/port-3.jpg" alt="" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+        <figcaption style="display:flex;flex-direction:column;gap:6px">
+          <span style="font:400 20px/1.3 Marcellus,serif;color:#2E2926">Baby Liz</span>
+          <span style="font:300 13px/1.5 Jost,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#8A7F77">Oto Meireles - Quarto VIP</span>
+        </figcaption>
+      </figure>
+      <figure data-reveal style="margin:0;display:flex;flex-direction:column;gap:16px">
+        <div style="position:relative;aspect-ratio:4/5;overflow:hidden"><img src="fotos/port-4.jpg" alt="" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+        <figcaption style="display:flex;flex-direction:column;gap:6px">
+          <span style="font:400 20px/1.3 Marcellus,serif;color:#2E2926">Baby Eloah</span>
+          <span style="font:300 13px/1.5 Jost,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#8A7F77">Unimed Sul</span>
+        </figcaption>
+      </figure>
+      <figure data-reveal style="margin:0;display:flex;flex-direction:column;gap:16px">
+        <div style="position:relative;aspect-ratio:4/5;overflow:hidden"><img src="fotos/port-5.jpg" alt="" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+        <figcaption style="display:flex;flex-direction:column;gap:6px">
+          <span style="font:400 20px/1.3 Marcellus,serif;color:#2E2926">Baby Lucas</span>
+          <span style="font:300 13px/1.5 Jost,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#8A7F77">Oto Meireles - Quarto convencional</span>
+        </figcaption>
+      </figure>
+      <figure data-reveal style="margin:0;display:flex;flex-direction:column;gap:16px">
+        <div style="position:relative;aspect-ratio:4/5;overflow:hidden"><img src="fotos/port-6.jpg" alt="" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+        <figcaption style="display:flex;flex-direction:column;gap:6px">
+          <span style="font:400 20px/1.3 Marcellus,serif;color:#2E2926">Baby Henrique</span>
+          <span style="font:300 13px/1.5 Jost,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#8A7F77">Genesis</span>
+        </figcaption>
+      </figure>
+    </div>
+    <div data-reveal style="margin-top:clamp(32px,4vw,56px);display:flex;flex-wrap:wrap;align-items:center;gap:16px 30px">
+      <p style="margin:0;font:400 clamp(19px,2vw,24px)/1.4 Marcellus,serif;color:#2E2926">Imagine essa experiência para o seu bebê.</p>
+      <a href="{{ whatsFinal }}" target="_blank" rel="noopener" style="color:#2E2926;border-bottom:1px solid rgba(46,41,38,.28);padding-bottom:5px;font:300 12px/1 Jost,sans-serif;letter-spacing:.16em;text-transform:uppercase" style-hover="color:#A96C60;border-bottom:1px solid #A96C60">Falar com uma especialista</a>
+    </div>
+  </div>
+</section>
+
+<section id="depoimentos" style="padding:clamp(72px,10vw,148px) clamp(24px,5vw,80px);background:#2E2926">
+  <div style="max-width:1280px;margin:0 auto">
+    <div data-reveal style="max-width:52ch;margin-bottom:clamp(40px,6vw,76px)">
+      <p style="margin:0 0 20px;font:300 11px/1 Jost,sans-serif;letter-spacing:.28em;text-transform:uppercase;color:#D8AFA3">Quem já viveu</p>
+      <h2 style="margin:0;font:400 clamp(28px,3.6vw,48px)/1.18 Marcellus,serif;color:#FAF7F4;text-wrap:pretty">Quando tudo está acontecendo, tranquilidade faz diferença.</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1px;background:rgba(250,247,244,.16)">
+      <blockquote data-reveal style="margin:0;background:#2E2926;padding:clamp(28px,3vw,44px);display:flex;flex-direction:column;gap:20px">
+        <p style="margin:0;font:400 clamp(17px,1.6vw,20px)/1.65 Marcellus,serif;color:#FAF7F4;text-wrap:pretty">“Mívia, queria te agradecer por todo o cuidado desde o primeiro contato. Você é criativa, sensível, tem um super bom gosto e transmite tanta leveza e segurança! Foi uma delícia receber o carinho da nossa família nesse ambiente mais acolhedor, pensado do jeitinho que a gente queria.. e além. ficou liiiindo! Deixo esse feedback em forma de elogio pra dizer um MUIIITO OBRIGADA! ❤️ Parabéns por esse trabalho bonito que você faz.”</p>
+        <span style="font:300 12px/1 Jost,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#C9B8AF">Érica Barroso, mãe do Martim</span>
+      </blockquote>
+      <blockquote data-reveal style="margin:0;background:#2E2926;padding:clamp(28px,3vw,44px);display:flex;flex-direction:column;gap:20px">
+        <p style="margin:0;font:400 clamp(18px,1.8vw,22px)/1.6 Marcellus,serif;color:#FAF7F4;text-wrap:pretty">“Mívia, muito obrigada por tanto carinho em cada detalhe. Estava tudo lindo e delicioso, foram muitos elogios do seu trabalho e nós amamos a COMODIDADE de RECEBER BEM nossos familiares. Que Deus te abençoe!”</p>
+        <span style="font:300 12px/1 Jost,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#C9B8AF">Denise, mãe do Isac</span>
+      </blockquote>
+      <blockquote data-reveal style="margin:0;background:#2E2926;padding:clamp(28px,3vw,44px);display:flex;flex-direction:column;gap:20px">
+        <p style="margin:0;font:400 clamp(18px,1.8vw,22px)/1.6 Marcellus,serif;color:#FAF7F4;text-wrap:pretty">“Só tenho a TE AGRADECER pelo profissionalismo, atenção, zelo e cuidado. A moça que veio da sua equipe sensacional! Super discreta, atenciosa, educada. O quarto ficou lindo! Deus providenciou você pra me auxiliar! Só tenho a lhe agradecer por toda TRANQUILIDADE e SUPORTE!”</p>
+        <span style="font:300 12px/1 Jost,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#C9B8AF">Ana Loise, mãe da Loise.</span>
+      </blockquote>
+      <blockquote data-reveal style="margin:0;background:#2E2926;padding:clamp(28px,3vw,44px);display:flex;flex-direction:column;gap:20px">
+        <p style="margin:0;font:400 clamp(18px,1.8vw,22px)/1.6 Marcellus,serif;color:#FAF7F4;text-wrap:pretty">“Por aqui está tudo perfeitinho! Deu tudo certo! Ficou tudo muito melhor do que imaginei! Obrigada por tudo! Percebemos o carinho, cuidado e zelo durante todo o atendimento até a entrega final da montagem!”</p>
+        <span style="font:300 12px/1 Jost,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#C9B8AF">Catarina Saraiva, mãe do Theo</span>
+      </blockquote>
+      <blockquote data-reveal style="margin:0;background:#2E2926;padding:clamp(28px,3vw,44px);display:flex;flex-direction:column;gap:20px">
+        <p style="margin:0;font:400 clamp(20px,2vw,26px)/1.55 Marcellus,serif;color:#FAF7F4;text-wrap:pretty">“Todo mundo amou a decoração! Ficou linda demais 💕”</p>
+        <span style="font:300 12px/1 Jost,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#C9B8AF">Marina Torquato, mãe da Flora</span>
+      </blockquote>
+      <blockquote data-reveal style="margin:0;background:#2E2926;padding:clamp(28px,3vw,44px);display:flex;flex-direction:column;gap:20px">
+        <p style="margin:0;font:400 clamp(18px,1.8vw,22px)/1.6 Marcellus,serif;color:#FAF7F4;text-wrap:pretty">“Amei tudo!! Muito obrigada por ter me ajudado nesse momento tão único das nossas vidas. Nunca vou esquecer do carinho que você teve com a gente quando meu Léo nasceu 💙”</p>
+        <span style="font:300 12px/1 Jost,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#C9B8AF">Ivna, mãe do Leonardo</span>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<section id="maternidades" style="padding:clamp(72px,10vw,148px) clamp(24px,5vw,80px)">
+  <div style="max-width:1280px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:clamp(32px,5vw,80px);align-items:start">
+    <div data-reveal>
+      <p style="margin:0 0 20px;font:300 11px/1 Jost,sans-serif;letter-spacing:.28em;text-transform:uppercase;color:#A96C60">Maternidades</p>
+      <h2 style="margin:0;font:400 clamp(28px,3.6vw,46px)/1.16 Marcellus,serif;color:#2E2926;text-wrap:pretty">Cada maternidade tem seus detalhes.<br>Nós conhecemos a importância deles.</h2>
+    </div>
+    <div data-reveal style="display:flex;flex-direction:column;gap:22px;max-width:52ch">
+      <p style="margin:0;font:300 clamp(16px,1.4vw,18px)/1.8 Jost,sans-serif;color:#5F564F">Tipo de quarto, espaço disponível, horários, regras de flores e logística podem mudar a composição. Nossa experiência com diferentes maternidades orienta a recomendação — assim nada precisa ser ajustado às pressas no dia.</p>
+      <div style="margin-top:8px;background:#EFE6DC;padding:clamp(26px,3vw,40px);display:flex;flex-direction:column;gap:14px">
+        <h3 style="margin:0;font:400 clamp(22px,2.2vw,28px)/1.3 Marcellus,serif;color:#2E2926">Bebês nem sempre seguem o calendário.</h3>
+        <p style="margin:0;font:300 15px/1.7 Jost,sans-serif;color:#5F564F">Acompanhamos as mudanças da gestação e adaptamos a operação quando a data muda. Faz parte do nosso jeito de cuidar.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="mesversario" style="padding:clamp(64px,8vw,120px) clamp(24px,5vw,80px);background:#EFE6DC;border-top:1px solid rgba(46,41,38,.1)">
+  <div style="max-width:1280px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(32px,5vw,72px);align-items:center">
+    <div data-reveal style="display:flex;flex-direction:column;gap:20px;max-width:48ch">
+      <p style="margin:0;font:300 11px/1 Jost,sans-serif;letter-spacing:.28em;text-transform:uppercase;color:#7E8F77">Mês-versário na Caixa</p>
+      <h2 style="margin:0;font:400 clamp(26px,3.2vw,42px)/1.18 Marcellus,serif;color:#2E2926;text-wrap:pretty">O cuidado pode continuar depois da maternidade.</h2>
+      <p style="margin:0;font:300 clamp(16px,1.4vw,18px)/1.8 Jost,sans-serif;color:#5F564F">Uma experiência à parte, para celebrar os primeiros meses do bebê em casa com a mesma coordenação de detalhes.</p>
+      <div>
+        <a href="{{ whatsMes }}" target="_blank" rel="noopener" style="display:inline-block;color:#2E2926;border-bottom:1px solid rgba(46,41,38,.28);padding-bottom:5px;font:300 12px/1 Jost,sans-serif;letter-spacing:.16em;text-transform:uppercase" style-hover="color:#A96C60;border-bottom:1px solid #A96C60">Quero conhecer</a>
+      </div>
+    </div>
+    <div data-reveal style="position:relative;aspect-ratio:16/10"><img src="fotos/mesversario.jpg" alt="" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+  </div>
+</section>
+
+<section id="faq" style="padding:clamp(72px,10vw,148px) clamp(24px,5vw,80px)">
+  <div style="max-width:1080px;margin:0 auto">
+    <div data-reveal style="margin-bottom:clamp(36px,5vw,64px)">
+      <p style="margin:0 0 20px;font:300 11px/1 Jost,sans-serif;letter-spacing:.28em;text-transform:uppercase;color:#A96C60">Dúvidas</p>
+      <h2 style="margin:0;font:400 clamp(28px,3.6vw,46px)/1.16 Marcellus,serif;color:#2E2926">Perguntas que sempre nos fazem.</h2>
+    </div>
+    <div data-reveal style="border-top:1px solid rgba(46,41,38,.14)">
+      <details style="border-bottom:1px solid rgba(46,41,38,.14)">
+        <summary style="list-style:none;cursor:pointer;padding:24px 0;font:400 clamp(17px,1.7vw,21px)/1.4 Marcellus,serif;color:#2E2926">O que exatamente a Maternidade na Caixa faz?</summary>
+        <p style="margin:0 0 26px;max-width:70ch;font:300 16px/1.75 Jost,sans-serif;color:#5F564F">Assumimos a coordenação estética e operacional da recepção na maternidade: composição, fornecedores, personalizados, doces, flores, papelaria, acervo, logística, montagem e desmontagem.</p>
+      </details>
+      <details style="border-bottom:1px solid rgba(46,41,38,.14)">
+        <summary style="list-style:none;cursor:pointer;padding:24px 0;font:400 clamp(17px,1.7vw,21px)/1.4 Marcellus,serif;color:#2E2926">Vocês fazem apenas decoração?</summary>
+        <p style="margin:0 0 26px;max-width:70ch;font:300 16px/1.75 Jost,sans-serif;color:#5F564F">Não. A decoração é uma parte. O serviço é de assessoria: organizamos os itens, os fornecedores e a operação do dia.</p>
+      </details>
+      <details style="border-bottom:1px solid rgba(46,41,38,.14)">
+        <summary style="list-style:none;cursor:pointer;padding:24px 0;font:400 clamp(17px,1.7vw,21px)/1.4 Marcellus,serif;color:#2E2926">Já tenho meus personalizados. Posso contratar só a montagem?</summary>
+        <p style="margin:0 0 26px;max-width:70ch;font:300 16px/1.75 Jost,sans-serif;color:#5F564F">Sim. Nesse caso cuidamos da composição, dos arranjos e da montagem, usando o que você já tem e o acervo contratado quando aplicável.</p>
+      </details>
+      <details style="border-bottom:1px solid rgba(46,41,38,.14)">
+        <summary style="list-style:none;cursor:pointer;padding:24px 0;font:400 clamp(17px,1.7vw,21px)/1.4 Marcellus,serif;color:#2E2926">Preciso saber quais itens quero antes de falar com vocês?</summary>
+        <p style="margin:0 0 26px;max-width:70ch;font:300 16px/1.75 Jost,sans-serif;color:#5F564F">Não. A maioria das famílias chega sem saber. Conversamos, entendemos o contexto e recomendamos a melhor composição.</p>
+      </details>
+      <details style="border-bottom:1px solid rgba(46,41,38,.14)">
+        <summary style="list-style:none;cursor:pointer;padding:24px 0;font:400 clamp(17px,1.7vw,21px)/1.4 Marcellus,serif;color:#2E2926">Vocês criam a identidade visual?</summary>
+        <p style="margin:0 0 26px;max-width:70ch;font:300 16px/1.75 Jost,sans-serif;color:#5F564F">Sim, quando a família ainda não tem uma. Também aplicamos uma identidade já existente aos elementos escolhidos.</p>
+      </details>
+      <details style="border-bottom:1px solid rgba(46,41,38,.14)">
+        <summary style="list-style:none;cursor:pointer;padding:24px 0;font:400 clamp(17px,1.7vw,21px)/1.4 Marcellus,serif;color:#2E2926">O serviço inclui desmontagem?</summary>
+        <p style="margin:0 0 26px;max-width:70ch;font:300 16px/1.75 Jost,sans-serif;color:#5F564F">Nos serviços com montagem, sim: cuidamos da desmontagem e da retirada do acervo. Os detalhes são confirmados na proposta.</p>
+      </details>
+      <details style="border-bottom:1px solid rgba(46,41,38,.14)">
+        <summary style="list-style:none;cursor:pointer;padding:24px 0;font:400 clamp(17px,1.7vw,21px)/1.4 Marcellus,serif;color:#2E2926">Quando devo começar a organizar?</summary>
+        <p style="margin:0 0 26px;max-width:70ch;font:300 16px/1.75 Jost,sans-serif;color:#5F564F">Quanto mais cedo, mais tranquilo — especialmente com personalizados e identidade visual. Mesmo perto da data, converse com a gente para avaliarmos.</p>
+      </details>
+      <details style="border-bottom:1px solid rgba(46,41,38,.14)">
+        <summary style="list-style:none;cursor:pointer;padding:24px 0;font:400 clamp(17px,1.7vw,21px)/1.4 Marcellus,serif;color:#2E2926">E se a data do parto mudar?</summary>
+        <p style="margin:0 0 26px;max-width:70ch;font:300 16px/1.75 Jost,sans-serif;color:#5F564F">Acompanhamos a gestação de perto e adaptamos a operação. Alinhamos como isso funciona já na proposta.</p>
+      </details>
+      <details style="border-bottom:1px solid rgba(46,41,38,.14)">
+        <summary style="list-style:none;cursor:pointer;padding:24px 0;font:400 clamp(17px,1.7vw,21px)/1.4 Marcellus,serif;color:#2E2926">Como funciona o orçamento?</summary>
+        <p style="margin:0 0 26px;max-width:70ch;font:300 16px/1.75 Jost,sans-serif;color:#5F564F">Cada proposta é montada a partir do seu contexto — hospital, número de visitas, itens e preferências. Fale com a gente pelo WhatsApp para receber a sua.</p>
+      </details>
+      <details style="border-bottom:1px solid rgba(46,41,38,.14)">
+        <summary style="list-style:none;cursor:pointer;padding:24px 0;font:400 clamp(17px,1.7vw,21px)/1.4 Marcellus,serif;color:#2E2926">Vocês fazem algo assim em casa também?</summary>
+        <p style="margin:0 0 26px;max-width:70ch;font:300 16px/1.75 Jost,sans-serif;color:#5F564F">Sim, é possível. Podemos levar a mesma ambientação para a chegada em casa, depois da alta. Converse com a gente para avaliarmos.</p>
+      </details>
+      <details style="border-bottom:1px solid rgba(46,41,38,.14)">
+        <summary style="list-style:none;cursor:pointer;padding:24px 0;font:400 clamp(17px,1.7vw,21px)/1.4 Marcellus,serif;color:#2E2926">Quanto tempo dura a montagem?</summary>
+        <p style="margin:0 0 26px;max-width:70ch;font:300 16px/1.75 Jost,sans-serif;color:#5F564F">Entre 1h e 1h30. Fazemos tudo antes da chegada das visitas, para que o quarto já esteja pronto quando elas chegarem.</p>
+      </details>
+      <details style="border-bottom:1px solid rgba(46,41,38,.14)">
+        <summary style="list-style:none;cursor:pointer;padding:24px 0;font:400 clamp(17px,1.7vw,21px)/1.4 Marcellus,serif;color:#2E2926">Preciso estar presente na montagem?</summary>
+        <p style="margin:0 0 26px;max-width:70ch;font:300 16px/1.75 Jost,sans-serif;color:#5F564F">Não é obrigatório. Você escolhe: pode acompanhar ou simplesmente descansar e receber o quarto pronto.</p>
+      </details>
+      <details style="border-bottom:1px solid rgba(46,41,38,.14)">
+        <summary style="list-style:none;cursor:pointer;padding:24px 0;font:400 clamp(17px,1.7vw,21px)/1.4 Marcellus,serif;color:#2E2926">Quem retira os itens depois?</summary>
+        <p style="margin:0 0 26px;max-width:70ch;font:300 16px/1.75 Jost,sans-serif;color:#5F564F">Nós. Voltamos no dia seguinte para a desmontagem e a retirada do acervo — você não precisa se preocupar com nada disso.</p>
+      </details>
+      <details style="border-bottom:1px solid rgba(46,41,38,.14)">
+        <summary style="list-style:none;cursor:pointer;padding:24px 0;font:400 clamp(17px,1.7vw,21px)/1.4 Marcellus,serif;color:#2E2926">Fechar com vocês sai mais caro do que contratar por fora?</summary>
+        <p style="margin:0 0 26px;max-width:70ch;font:300 16px/1.75 Jost,sans-serif;color:#5F564F">Não. Temos condições negociadas com nossos fornecedores parceiros, e quem fecha com a gente aproveita esses valores.</p>
+      </details>
+      <details style="border-bottom:1px solid rgba(46,41,38,.14)">
+        <summary style="list-style:none;cursor:pointer;padding:24px 0;font:400 clamp(17px,1.7vw,21px)/1.4 Marcellus,serif;color:#2E2926">Posso parcelar o pagamento?</summary>
+        <p style="margin:0 0 26px;max-width:70ch;font:300 16px/1.75 Jost,sans-serif;color:#5F564F">Sim. Trabalhamos com parcelamento no cartão com acréscimo da taxa e também combinamos formas de pagamento na proposta.</p>
+      </details>
+      <details style="border-bottom:1px solid rgba(46,41,38,.14)">
+        <summary style="list-style:none;cursor:pointer;padding:24px 0;font:400 clamp(17px,1.7vw,21px)/1.4 Marcellus,serif;color:#2E2926">Vou receber poucas visitas. O pacote se ajusta?</summary>
+        <p style="margin:0 0 26px;max-width:70ch;font:300 16px/1.75 Jost,sans-serif;color:#5F564F">Sim. A composição é dimensionada pelo número de visitas e pelo espaço do quarto — recepções menores têm proposta própria, sem itens que você não vai usar.</p>
+      </details>
+      <details style="border-bottom:1px solid rgba(46,41,38,.14)">
+        <summary style="list-style:none;cursor:pointer;padding:24px 0;font:400 clamp(17px,1.7vw,21px)/1.4 Marcellus,serif;color:#2E2926">Quanto tempo antes preciso fechar a identidade visual?</summary>
+        <p style="margin:0 0 26px;max-width:70ch;font:300 16px/1.75 Jost,sans-serif;color:#5F564F">A produção dos personalizados leva cerca de 10 dias úteis depois da identidade aprovada. Por isso, quanto mais cedo começarmos, mais tranquilo fica.</p>
+      </details>
+      <details style="border-bottom:1px solid rgba(46,41,38,.14)">
+        <summary style="list-style:none;cursor:pointer;padding:24px 0;font:400 clamp(17px,1.7vw,21px)/1.4 Marcellus,serif;color:#2E2926">E se a maternidade não permitir flores naturais no quarto?</summary>
+        <p style="margin:0 0 26px;max-width:70ch;font:300 16px/1.75 Jost,sans-serif;color:#5F564F">Conhecemos as regras de cada maternidade e propomos alternativas que mantêm o mesmo efeito na composição. Nada é decidido sem considerar o que o hospital permite.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section id="conversar" style="padding:clamp(80px,11vw,168px) clamp(24px,5vw,80px);background:#A96C60">
+  <div data-reveal style="max-width:900px;margin:0 auto;display:flex;flex-direction:column;gap:28px">
+    <h2 style="margin:0;font:400 clamp(30px,4.4vw,58px)/1.14 Marcellus,serif;color:#FDF8F5;text-wrap:pretty">Tem coisas que vocês vão lembrar para sempre.<br>Os detalhes, deixa com a gente.</h2>
+    <p style="margin:0;max-width:56ch;font:300 clamp(16px,1.5vw,19px)/1.75 Jost,sans-serif;color:#FBEDE7">Conte um pouco sobre a chegada do seu bebê e vamos imaginar juntas a melhor forma de receber esse momento.</p>
+    <div>
+      <a href="{{ whatsFinal }}" target="_blank" rel="noopener" style="display:inline-block;background:#FDFBF9;color:#2E2926;padding:22px 40px;font:400 13px/1 Jost,sans-serif;letter-spacing:.16em;text-transform:uppercase;transition:background .3s,color .3s" style-hover="background:#2E2926;color:#FDFBF9">Quero conversar sobre minha maternidade</a>
+    </div>
+  </div>
+</section>
+
+<footer style="padding:clamp(56px,7vw,96px) clamp(24px,5vw,80px) 36px;background:#2E2926">
+  <div style="max-width:1280px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:40px">
+    <div style="display:flex;flex-direction:column;gap:16px">
+      <span style="font:400 18px/1.3 Marcellus,serif;letter-spacing:.14em;text-transform:uppercase;color:#FAF7F4">Maternidade na Caixa</span>
+      <p style="margin:0;max-width:32ch;font:300 14px/1.7 Jost,sans-serif;color:#C9B8AF">Assessoria à maternidade: decoração, personalizados, fornecedores e montagem do quarto de maternidade.</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:12px">
+      <span style="font:300 11px/1 Jost,sans-serif;letter-spacing:.24em;text-transform:uppercase;color:#A2958D">Contato</span>
+      <a href="{{ whatsFinal }}" target="_blank" rel="noopener" style="font:300 15px/1.6 Jost,sans-serif;color:#FAF7F4" style-hover="color:#D8AFA3">WhatsApp</a>
+      <a href="https://instagram.com/maternidadenacaixa" target="_blank" rel="noopener" style="font:300 15px/1.6 Jost,sans-serif;color:#FAF7F4" style-hover="color:#D8AFA3">@maternidadenacaixa</a>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:12px">
+      <span style="font:300 11px/1 Jost,sans-serif;letter-spacing:.24em;text-transform:uppercase;color:#A2958D">Serviços</span>
+      <a href="#experiencias" style="font:300 15px/1.6 Jost,sans-serif;color:#FAF7F4" style-hover="color:#D8AFA3">Experiências</a>
+      <a href="#montagem" style="font:300 15px/1.6 Jost,sans-serif;color:#FAF7F4" style-hover="color:#D8AFA3">Assessoria de montagem</a>
+      <a href="#personalizacao" style="font:300 15px/1.6 Jost,sans-serif;color:#FAF7F4" style-hover="color:#D8AFA3">Identidade visual</a>
+      <a href="#mesversario" style="font:300 15px/1.6 Jost,sans-serif;color:#FAF7F4" style-hover="color:#D8AFA3">Mês-versário na Caixa</a>
+    </div>
+  </div>
+  <p style="max-width:1280px;margin:48px auto 0;padding-top:24px;border-top:1px solid rgba(250,247,244,.14);font:300 12px/1.6 Jost,sans-serif;letter-spacing:.08em;color:#A2958D">© Maternidade na Caixa</p>
+</footer>
+
+<a href="{{ whatsFinal }}" target="_blank" rel="noopener" style="position:fixed;right:20px;bottom:20px;z-index:80;display:flex;align-items:center;gap:10px;background:#2E2926;color:#FDFBF9;padding:15px 22px;font:400 11px/1 Jost,sans-serif;letter-spacing:.16em;text-transform:uppercase;box-shadow:0 18px 40px -20px rgba(46,41,38,.8);transition:background .3s" style-hover="background:#A96C60;color:#FDFBF9">Falar no WhatsApp</a>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{}">
+const WA = "5585996448841";
+const msg = t => `https://wa.me/${WA}?text=${encodeURIComponent(t)}`;
+class Component extends DCLogic {
+  componentDidMount() {
+    const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); } }), { threshold: .12, rootMargin: '0px 0px -8%' });
+    const scan = () => document.querySelectorAll('[data-reveal]:not(.is-in)').forEach((el, i) => { el.style.transitionDelay = (i % 4) * 90 + 'ms'; io.observe(el); });
+    scan();
+    this._mo = new MutationObserver(scan);
+    this._mo.observe(document.body, { childList: true, subtree: true });
+  }
+  componentWillUnmount() { this._mo && this._mo.disconnect(); }
+  renderVals() {
+    return {
+      whatsHero: msg("Oi! Vim pelo site da Maternidade na Caixa e gostaria de entender qual experiência vocês recomendam para a chegada do meu bebê. 🤍"),
+      whatsMontagem: msg("Oi! Já tenho meus itens e gostaria de ajuda com a montagem na maternidade. 🤍"),
+      whatsPacotes: msg("Oi! Gostaria de entender qual experiência faz mais sentido para a chegada do meu bebê. 🤍"),
+      whatsFinal: msg("Oi! Vim pelo site e gostaria de conversar sobre a minha maternidade. 🤍"),
+      whatsMes: msg("Oi! Gostaria de conhecer o Mês-versário na Caixa. 🤍")
+    };
+  }
+}
+</script>
+</body>
+</html>

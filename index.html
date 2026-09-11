@@ -14,7 +14,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Jost:wght@200;300;400;500&display=swap">
 <style>
-  html { scroll-behavior: smooth; }
+  html { scroll-behavior: smooth; scroll-padding-top: 108px; }
+  @media (min-width: 980px) { html { scroll-padding-top: 76px; } }
   body { margin: 0; background: #FAF7F4; color: #2E2926; font-family: Jost, sans-serif; -webkit-font-smoothing: antialiased; }
   * { box-sizing: border-box; }
   a { color: #A96C60; text-decoration: none; }
@@ -31,21 +32,27 @@
   @keyframes mncMarquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
   #mnc-ticker:hover [data-track] { animation-play-state: paused; }
   @media (prefers-reduced-motion: reduce) { #mnc-ticker [data-track] { animation: none; } }
-  @media (min-width: 900px) { [data-desktop-nav] { display: flex !important; } }
+  [data-secnav] { scrollbar-width: none; -ms-overflow-style: none; }
+  [data-secnav]::-webkit-scrollbar { display: none; }
+  [data-secnav] a[data-on] { color: #A96C60 !important; border-bottom-color: #A96C60 !important; }
+  @media (min-width: 980px) { [data-secnav] { order: 2 !important; flex: 0 1 auto !important; justify-content: center; overflow: visible; } }
 </style>
 </helmet>
 
 <div>
 <template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="#A96C60"/><text x="50" y="59" text-anchor="middle" font-family="Georgia,serif" font-size="30" fill="#FDFBF9">MC</text></svg></template>
 
-<header style="position:sticky;top:0;z-index:60;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:16px clamp(20px,5vw,64px);background:rgba(250,247,244,.93);backdrop-filter:blur(12px);border-bottom:1px solid rgba(46,41,38,.1);animation:mncFade .8s .1s both">
+<header style="position:sticky;top:0;z-index:60;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 24px;padding:14px clamp(20px,5vw,64px);background:rgba(250,247,244,.93);backdrop-filter:blur(12px);border-bottom:1px solid rgba(46,41,38,.1);animation:mncFade .8s .1s both">
   <a href="#top" style="font:400 16px/1 Marcellus,serif;letter-spacing:.14em;text-transform:uppercase;color:#2E2926">Maternidade na Caixa</a>
-  <nav style="display:none;flex-wrap:wrap;gap:14px 26px;align-items:center;justify-content:center" data-desktop-nav>
-    <a href="#sobre" style="font:300 11px/1 Jost,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#5F564F">Sobre</a>
-    <a href="#como-funciona" style="font:300 11px/1 Jost,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#5F564F">Como funciona</a>
-    <a href="#experiencias" style="font:300 11px/1 Jost,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#5F564F">Experiências</a>
-    <a href="#portfolio" style="font:300 11px/1 Jost,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#5F564F">Histórias</a>
-    <a href="#faq" style="font:300 11px/1 Jost,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#5F564F">Dúvidas</a>
+  <nav data-secnav style="order:3;flex:1 0 100%;display:flex;gap:20px;align-items:center;overflow-x:auto;padding-bottom:2px">
+    <a href="#sobre" style="flex:none;font:300 11px/1 Jost,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#5F564F;border-bottom:1px solid transparent;padding-bottom:4px" style-hover="color:#A96C60">Sobre</a>
+    <a href="#como-funciona" style="flex:none;font:300 11px/1 Jost,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#5F564F;border-bottom:1px solid transparent;padding-bottom:4px" style-hover="color:#A96C60">Como funciona</a>
+    <a href="#experiencias" style="flex:none;font:300 11px/1 Jost,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#5F564F;border-bottom:1px solid transparent;padding-bottom:4px" style-hover="color:#A96C60">Experiências</a>
+    <a href="#montagem" style="flex:none;font:300 11px/1 Jost,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#5F564F;border-bottom:1px solid transparent;padding-bottom:4px" style-hover="color:#A96C60">Montagem</a>
+    <a href="#portfolio" style="flex:none;font:300 11px/1 Jost,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#5F564F;border-bottom:1px solid transparent;padding-bottom:4px" style-hover="color:#A96C60">Histórias</a>
+    <a href="#depoimentos" style="flex:none;font:300 11px/1 Jost,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#5F564F;border-bottom:1px solid transparent;padding-bottom:4px" style-hover="color:#A96C60">Depoimentos</a>
+    <a href="#mesversario" style="flex:none;font:300 11px/1 Jost,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#5F564F;border-bottom:1px solid transparent;padding-bottom:4px" style-hover="color:#A96C60">Mês-versário</a>
+    <a href="#faq" style="flex:none;font:300 11px/1 Jost,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#5F564F;border-bottom:1px solid transparent;padding-bottom:4px" style-hover="color:#A96C60">Dúvidas</a>
   </nav>
   <a href="{{ whatsHero }}" target="_blank" rel="noopener" style="flex:none;background:#A96C60;color:#FDFBF9;padding:13px 22px;font:400 11px/1 Jost,sans-serif;letter-spacing:.16em;text-transform:uppercase;transition:background .3s" style-hover="background:#8E5750;color:#FDFBF9">Quero planejar</a>
 </header>
@@ -486,8 +493,26 @@ class Component extends DCLogic {
     scan();
     this._mo = new MutationObserver(scan);
     this._mo.observe(document.body, { childList: true, subtree: true });
+    this._spy();
   }
-  componentWillUnmount() { this._mo && this._mo.disconnect(); }
+  componentWillUnmount() { this._mo && this._mo.disconnect(); this._so && this._so.disconnect(); }
+  componentDidUpdate() { this._spy(); }
+  _spy() {
+    if (this._so) this._so.disconnect();
+    const links = [...document.querySelectorAll('[data-secnav] a')];
+    if (!links.length) return;
+    const byId = {};
+    links.forEach(a => { const id = a.getAttribute('href').slice(1); const s = document.getElementById(id); if (s) byId[id] = a; });
+    this._so = new IntersectionObserver(es => {
+      es.forEach(e => {
+        if (!e.isIntersecting) return;
+        links.forEach(a => a.removeAttribute('data-on'));
+        const a = byId[e.target.id];
+        if (a) { a.setAttribute('data-on', ''); const n = a.parentElement; if (n.scrollWidth > n.clientWidth) n.scrollTo({ left: a.offsetLeft - 24, behavior: 'smooth' }); }
+      });
+    }, { rootMargin: '-20% 0px -70%' });
+    Object.keys(byId).forEach(id => this._so.observe(document.getElementById(id)));
+  }
   renderVals() {
     return {
       whatsHero: msg("Oi! Vim pelo site da Maternidade na Caixa e gostaria de entender qual experiência vocês recomendam para a chegada do meu bebê. 🤍"),
